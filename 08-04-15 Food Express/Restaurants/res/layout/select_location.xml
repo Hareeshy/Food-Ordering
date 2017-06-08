@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient" >
+     <ImageView 
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:src="@drawable/train_snacks"
+        android:scaleType="fitXY"
+        android:alpha="0.5"/>
+     <TextView
+        android:id="@+id/textV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Select City"
+        android:textColor="#000" />
+     
+    <Spinner
+        android:id="@+id/sp_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textV"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listView1"
+        android:layout_below="@+id/sp_city"
+        android:text="Available stations for food delivery"
+        android:textColor="#000" />
+    
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/border"
+        
+        android:layout_below="@+id/textView1" >
+
+    </ListView>
+
+
+</RelativeLayout>

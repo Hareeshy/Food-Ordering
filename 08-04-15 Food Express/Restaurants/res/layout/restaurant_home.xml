@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+ 	<ImageView 
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:src="@drawable/train_snacks"
+        android:scaleType="fitXY"
+        android:alpha="0.5"/>
+       <Button
+           android:id="@+id/bt_orders"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="20dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:background="@android:color/holo_orange_light"
+           android:text="Orders"
+           android:textColor="#fff"
+           android:textStyle="bold" />
+
+       <Button
+           android:id="@+id/bt_items"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_below="@+id/bt_orders"
+           android:layout_marginTop="20dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:background="@android:color/holo_orange_light"
+           android:text="Menu Items"
+           android:textColor="#fff"
+           android:textStyle="bold" />
+       
+           <Button
+           android:id="@+id/bt_reviews"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_below="@+id/bt_items"
+           android:layout_marginTop="20dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:background="@android:color/holo_orange_light"
+           android:text="Reviews"
+           android:textColor="#fff"
+           android:textStyle="bold" />
+       
+          <Button
+           android:id="@+id/bt_train_status"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_below="@+id/bt_reviews"
+           android:layout_marginTop="20dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:background="@android:color/holo_orange_light"
+           android:text="Train Status"
+           android:textColor="#fff"
+           android:textStyle="bold" />
+          
+           <Button
+           android:id="@+id/bt_pnr_status"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_below="@+id/bt_train_status"
+           android:layout_marginTop="20dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:background="@android:color/holo_orange_light"
+           android:text="PNR Status"
+           android:textColor="#fff"
+           android:textStyle="bold" />
+           
+            <Button
+           android:id="@+id/bt_active"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_below="@+id/bt_pnr_status"
+           android:layout_marginTop="20dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:background="@android:color/holo_orange_light"
+           android:text="Active Items"
+           android:textColor="#fff"
+           android:textStyle="bold" />
+       
+
+</RelativeLayout>

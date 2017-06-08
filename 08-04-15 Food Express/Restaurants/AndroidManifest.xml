@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.foodexpress"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" android:restoreAnyVersion="false">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SelectLocation"
+            android:label="@string/title_activity_select_location" >
+        </activity>
+        <activity
+            android:name=".AvailableRestaurants"
+            android:label="@string/title_activity_available_restaurants" >
+        </activity>
+        <activity android:name="Restaurant_Home" android:label="Welcome"></activity>
+        <activity android:name="FinalTrain"></activity>
+        <activity android:name="FinalPNR"></activity>
+        <activity android:name="PNRStatus"></activity>
+        <activity android:name="RestaurantItemDetails" android:label="@string/app_name"></activity>
+        <activity android:name="RestaurantSelectedItems"></activity>
+        <activity android:name="Restaurent_Items"></activity>
+        <activity android:name="Restaurant_Reviews" android:label="Reviews"></activity>
+        <activity android:name="Restaurant_Orders" android:label="Orders"></activity>
+        <activity android:name="User_ItemList" android:label="Items"></activity>
+        <activity android:name="OrderItems" android:label="Items"></activity>
+        <activity android:name="ResOrderItems"></activity>
+        <activity android:name="com.foodexpress.User_Home" android:label="Welcome"></activity>
+        <activity android:name="ListPayment" android:label="Payment Gateway"></activity>
+        <activity android:name=".User_Orders" ></activity>
+        <activity android:name=".Modify_Orders" android:label="Modify Order"></activity>
+        <activity android:name=".RestaurantActiveItems" android:label="Restaurant Items"/>
+        
+    </application>
+
+</manifest>

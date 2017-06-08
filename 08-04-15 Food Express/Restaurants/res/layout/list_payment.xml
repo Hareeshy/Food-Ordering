@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+ 
+
+<RadioGroup
+    android:id="@+id/radioGroup1"
+    android:padding="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RadioButton
+        android:id="@+id/radio0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Credit/ Debit" />
+
+    <RadioButton
+        android:id="@+id/radio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NetBanking" />
+     <RadioButton
+        android:id="@+id/radio3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COD" />
+
+   
+</RadioGroup>
+
+<LinearLayout 
+    android:id="@+id/CreditCardTablelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+     >
+    
+    <RadioGroup
+    android:id="@+id/radioGr"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RadioButton
+        android:id="@+id/radio23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:checked="true"
+        android:text="VISA" />
+
+    <RadioButton
+        android:id="@+id/radio24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="MasterCard" />
+
+   
+</RadioGroup>
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="4dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <EditText
+                android:id="@+id/cardNumberTextEdit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:textColorHint="#000"
+                android:hint="Card Number"
+                android:inputType="number"
+                android:maxLength="16"
+                android:nextFocusDown="@+id/cardMonthEditText"
+                android:nextFocusRight="@+id/cardMonthEditText" />
+
+            <requestFocus />
+
+          
+        </RelativeLayout>
+    </LinearLayout>
+
+  
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="4dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="4dp" >
+
+           
+
+                <EditText
+                    android:id="@+id/cardDateEditText"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:hint="dd"
+                android:textColorHint="#000"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:nextFocusDown="@+id/cardYearEditText"
+                    android:nextFocusRight="@+id/cardYearEditText" >
+
+                </EditText>
+				 <TextView
+				     android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="/"
+                    android:textSize="30dp" />
+
+                <EditText
+                    android:id="@+id/cardMonthEditText"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+	                android:textColorHint="#000"
+                    android:ems="10"
+                    android:hint="MM"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:nextFocusDown="@+id/verificationEditText"
+                    android:nextFocusRight="@+id/verificationEditText" />
+                
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="/"
+                    android:textSize="30dp" />
+
+                <EditText
+                    android:id="@+id/cardYearEditText"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:ems="10"
+    	            android:textColorHint="#000"
+                    android:hint="yyyy"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:nextFocusDown="@+id/verificationEditText"
+                    android:nextFocusRight="@+id/verificationEditText" />
+
+          
+        </LinearLayout>
+    </LinearLayout>
+
+			<EditText
+                    android:id="@+id/verificationEditText"
+                    android:layout_width="65dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="CVV"
+                    android:inputType="number"
+                android:textColorHint="#000"
+                    android:maxLength="3"
+                    android:nextFocusDown="@+id/cardHolderEditText"
+                    android:nextFocusRight="@+id/cardHolderEditText" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp" >
+
+        <EditText
+            android:id="@+id/cardHolderEditText"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:ems="10"
+                android:textColorHint="#000"
+            android:hint="Name on card"
+            android:inputType="text"
+            android:nextFocusDown="@+id/verificationEditText"
+            android:nextFocusRight="@+id/paymentButton" />
+    </LinearLayout>
+
+   
+
+</LinearLayout>
+
+<Spinner
+    android:id="@+id/spinner1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:entries="@array/banks" />
+
+ <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay Now"
+        android:textColor="#000"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+</LinearLayout>

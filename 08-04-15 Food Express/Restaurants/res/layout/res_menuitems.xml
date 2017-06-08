@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient" >
+    <ImageView 
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:src="@drawable/train_snacks"
+        android:scaleType="fitXY"
+        android:alpha="0.5"/>
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/bt_ll" >
+
+    </ListView>
+    
+    <LinearLayout
+        android:id="@+id/bt_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:orientation="horizontal" >
+
+        
+        <Button
+            android:id="@+id/bt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_margin="2dp"
+            android:textColor="#fff"
+            android:background="@android:color/holo_red_light"
+            android:text="Back" />
+
+        <Button      
+            android:textColor="#fff"
+            android:id="@+id/bt_next"
+            android:textStyle="bold"
+            android:layout_margin="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_purple"
+            android:layout_weight="1"
+            android:text="Next" />
+
+    </LinearLayout>
+
+</RelativeLayout>

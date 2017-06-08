@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.foodexpress.MainActivity"
+    android:background="@drawable/bg_gradient" >
+    <ImageView 
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:src="@drawable/train_snacks"
+        android:scaleType="fitXY"
+        android:alpha="0.5"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_ll"
+        android:layout_alignLeft="@+id/edt_usermail"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:background="@drawable/whiteborder"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/edt_usermail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:layout_above="@+id/edt_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/whiteborder"
+        android:ems="10"
+        android:hint="Enter email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edt_phnumber"
+        android:layout_alignLeft="@+id/edt_usermail"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/whiteborder"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        android:visibility="gone" >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edt_phnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:layout_above="@+id/edt_address"
+        android:layout_alignLeft="@+id/edt_name"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/whiteborder"
+        android:ems="10"
+        android:hint="EnterPhone No"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/edt_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:layout_above="@+id/edt_usermail"
+        android:layout_alignLeft="@+id/edt_phnumber"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/whiteborder"
+        android:ems="10"
+        android:hint="Enter Address"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/bt_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal" >
+
+        <Button
+             android:id="@+id/bt_guest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:background="@android:color/holo_orange_light"
+            android:text="@string/guest" />
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:textColor="#fff"
+            android:background="@android:color/holo_red_light"
+            android:onClick="login"
+            android:text="@string/login" />
+
+        <Button      
+            android:textColor="#fff"
+            android:id="@+id/bt_signup"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_purple"
+            android:onClick="signup"
+            android:layout_weight="1"
+            android:text="@string/signup" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Food Express"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+</RelativeLayout>
+
+</RelativeLayout>
